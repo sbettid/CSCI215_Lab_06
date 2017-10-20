@@ -3,3 +3,13 @@ function checkEmail(email) {
     return re.test(email);
 
 }
+
+function checkAge() {
+    var regEx = new RegExp('\w');
+    
+    if() {
+       
+    } else {
+       
+    }
+}
