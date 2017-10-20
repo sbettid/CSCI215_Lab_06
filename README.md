@@ -7,6 +7,18 @@ This will be a two-part lab. Part 1 will consist of creating a form in HTML and 
 Perform the steps in **Tutorial: Styling a Form**. These steps can be found in the PDF directory. Before performing the step, observe the initial look and feel. Part 1 will improve on this.
 
 ## Part 2
-Write JavaScript that will check the user's name to ensure that it only contains valid letters for a name, check that the user inputted a number for age, and that a proper email was submitted. These should be contained in their own functions called, for example **checkName(), checkAge(), and checkEmail()**. Add a click listener on to the subscribe button. When a user clicks submit, the checkName(), checkAge(), and checkEmail() functions should be called (**HINT: create one function called validate() that calls the three required functions**). If any of the fields are invalid, change the background color of that input to red and do not submit. If all inputs are correct, **alert** the user that their subscription was submitted. 
+**Step 1:**
+* Remove the action from the form. This is done by making it an empty string.
+
+**Step 2:**
+* Write JavaScript that will check the user's name to ensure that it only contains valid letters (specifically not an '\<') for a name, check that the user inputted a number for age, and that a proper email was submitted. These should be contained in their own functions called, for example **checkName(), checkAge(), and validate()**. 
+
+  * checkName() should be an onKeypress listener and turn the background color to red when it contains the illegal character '\<'. When the '\<' is removed, the field should behave as it did before turning red. (Hint: RegExp())
+  * checkAge() should be an onKeypress listener and turn the background red whenever the user types a '.' or the number is more than 3 digits. When the discrepency is removed, the field should behave as it did before.
+  * validate() should be an onClick listener for the Subscribe button that when clicked does the following:
+    * calls a checkEmail() function.
+    * If the email is good, then a call to myAjaxFunction() should be made that simply makes and alert() that notifies that the AJAX has been made and then clears out all of the user data in the input fields.
+    * If the email is not good, then alert() the user that the subscription could not be processed and to check the information.
+
 
 
