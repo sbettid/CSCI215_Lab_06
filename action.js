@@ -5,7 +5,7 @@ function checkEmail(email) {
 }
 
 function checkAge() {
-    var regEx = new RegExp('\w');
+    var regEx = new RegExp('^(([0-9][1-9])|([1-9][0-9])|[1-9])$');
     
     if() {
        
