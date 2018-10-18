@@ -6,7 +6,7 @@ This will be a two-part lab. Part 1 will consist of creating a form in HTML and 
 ## Part 1
 Perform the steps in **Tutorial: Styling a Form**. These steps can be found in the PDF directory. Before performing the step, observe the initial look and feel. Part 1 will improve on this.
 
-## Part 2 (Due: Monday, 26 Oct 2017 @ 11:59 pm)
+## Part 2 (Due: Monday, 26 Oct 2018 @ 11:59 pm)
 **Step 1:**
 * Remove the action from the form. This is done by making it an empty string.
 
