@@ -63,7 +63,7 @@ p {
 	color: rgba(255,255,255,.5);
 }
 
-.subform input[type="submit"]{
+.subform input[type="button"]{
 	margin-left: 220px;
 	padding: 10px 25px;
 	color: white;

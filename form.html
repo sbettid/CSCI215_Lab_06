@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Reader Subscription Form</h1>
-<form class="subform"  method="post" action="submit.html">
+<form class="subform"  method="post" >
 	<p>
 		<label for="name" class="label" >What is your name?</label>
 		<input type="text" name="name" id="name">
@@ -49,8 +49,10 @@
 		<textarea name="comments" cols="35" rows="4" id="comments"></textarea>
 	</p>
 	<p>
-		<input type="submit" value="Subscribe">
+		<input type="button" value="Subscribe" id="subscribe">
 	</p>
 </form>
+
+<script src="action.js"></script>
 </body>
 </html>
